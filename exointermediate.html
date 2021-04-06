@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+    // exo 1
+    // number of characters
+        var myString = "this is a sentence";
+            var stringLength = myString.length;
+            console.log(stringLength);
+    //  number of words
+      function WordCount(str) { 
+        return str.split(" ").length;
+           }
+             console.log(WordCount("this is a sentence"));
+    //    number of vowel
+    function vowel_count(str1)
+       {
+            var vowel_list = 'aeiouAEIOU';
+            var vcount = 0;
+  
+           for(var x = 0; x < str1.length ; x++)
+             {
+               if (vowel_list.indexOf(str1[x]) !== -1)
+                   {
+                   vcount += 1;
+                     }
+  
+                }
+                 return vcount;
+                 }
+             console.log(vowel_count("this is a sentence"));
+
+// _______________________________________________________________________
+// exo 3
+function OverlappingRanges(arr) {
+
+var counter = 0;
+for (var i = arr[0]; i < arr[1]; i++) {
+  if (i >= arr[2] && i <= arr[3]) { 
+    counter += 1;
+  }
+
+}
+
+return (counter >= arr[4]) ? true : false;
+}
+OverlappingRanges([1,5], [6,10], [12,15], [3,7]); 
+// _____________________________________________________________________________
+// exo 5
+   var Array = [1, 4, -5, 3, -2, 10, -6, 20]; 
+   var Array  = [-5, 5]; 
+   var Array  = [5, 8]; 
+   var Array  = [-5,-5]; 
+​
+function posNeg(Array) {
+  let sum = Math.abs(Array[0] + Array[1]);
+  for (let i = 0; i < Array.length; i++) {
+    for (let j = i + 1; j < Array.length; j++) {
+      if (Math.abs(Array[i] + Array[j]) < sum) {
+        sum = Math.abs(Array[i] + Array[j]);
+      }
+    }
+  }
+  return sum;
+}
+    </script>
+</body>
+</html>

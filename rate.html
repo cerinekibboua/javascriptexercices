@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const products = [
+  {
+    _id: 'eedfcf',
+    name: 'mobile phone',
+    description: 'Huawei Honor',
+    price: 200,
+    ratings: [{ userId: 'fg12cy', rate: 5 }, { userId: 'zwf8md', rate: 4.5 }],
+    likes: []
+  },
+  {
+    _id: 'aegfal',
+    name: 'Laptop',
+    description: 'MacPro: System Darwin',
+    price: 2500,
+    ratings: [],
+    likes: ['fg12cy']
+  },
+  {
+    _id: 'hedfcg',
+    name: 'TV',
+    description: 'Smart TV:Procaster',
+    price: 400,
+    ratings: [{ userId: 'fg12cy', rate: 5 }],
+    likes: ['fg12cy']
+  }
+];
+console.log(products[0]);
+  function averageRating (procuct_id){
+    let rate=0;
+    let avg =0;
+    let len;
+    for (let i=0;i < products.length ;i++){
+        if(products[i]._id === procuct_id){
+            len=products[i].ratings.length;   
+        for(let j=0;j<len;j++){
+            console.log("Why");
+         if(len==0){
+             return 0;
+         }else{
+            rate =rate+ products[i].ratings[j].rate;
+         }
+        }
+        }
+         }
+        console.log(rate);
+         avg=rate/len;
+        return avg;
+    }
+    averageRating('eedfcf');
+
+    len=products[0].ratings.length;
+      console.log(len);
+    </script>
+</body>
+</html>
+

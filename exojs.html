@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+
+           function reversedWord(word){
+            const word = ['Anna','Asa','Civic','common','Kayak','Level','Madam','Mom','Noon ','Rotor','Sagas ','Solar','Stats','Tenet ','Wow'];
+            let formatedWord=word.toLowerCase();
+            let wordReversed=" ";
+            for(i=formatedWord.length-1;i>=0;i--){
+                wordReversed = wordReversed+formatedWord[i];
+            }
+            return wordReversed;
+
+           }
+        console.log(isPalandrome("Anna"));
+        console.log(isPalandrome("Asa"));
+        console.log(isPalandrome("Civic"));
+        console.log(isPalandrome("common"));
+        console.log(isPalandrome("Kayak"));
+        console.log(isPalandrome("Level"));
+        console.log(isPalandrome("Madam"));
+        console.log(isPalandrome("Mom"));
+        console.log(isPalandrome("Noon"));
+        console.log(isPalandrome("Rotor"));
+        console.log(isPalandrome("Sagas"));
+        console.log(isPalandrome("Solar"));
+        console.log(isPalandrome("Stats"));
+        console.log(isPalandrome("Tenet"));
+        console.log(isPalandrome("Wow"));
+
+
+
+        function isPalandrome(word){
+            if(word === reversedWord(word)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(isPalandrome("Anna"));
+        console.log(isPalandrome("Asa"));
+        console.log(isPalandrome("Civic"));
+        console.log(isPalandrome("common"));
+        console.log(isPalandrome("Kayak"));
+        console.log(isPalandrome("Level"));
+        console.log(isPalandrome("Madam"));
+        console.log(isPalandrome("Mom"));
+        console.log(isPalandrome("Noon"));
+        console.log(isPalandrome("Rotor"));
+        console.log(isPalandrome("Sagas"));
+        console.log(isPalandrome("Solar"));
+        console.log(isPalandrome("Stats"));
+        console.log(isPalandrome("Tenet"));
+        console.log(isPalandrome("Wow"));
+
+
+
+        
+    
+    </script>
+</body>
+</html>

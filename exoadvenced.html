@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function like(likes){
+  let sum="likes"
+  for(let i=0;i<=likes.length;i++){
+    if (likes.length==0){
+     x=likes[i]+"no one likes this";
+​
+   elseif (likes.length==1);{
+    x=likes[i]+" Peter likes this";
+   }
+
+  elseif (likes.length==2);{
+    x=x+ likes[i]+ "Jacob and Alex like this" ;
+  }
+  
+    
+  elseif (likes.length==3);{
+    x=x+ likes[i]+ "Max,John and Mark like this " ;
+    phrase=x+sum;
+  }
+ 
+    
+    
+​
+ elseif (likes.length>=4);{
+    x=x+ likes[i]+ "Alex , Jacob and 2 others like this  " ;
+  }
+  
+    
+   
+​
+  }
+
+  }
+  
+}
+
+// ------------------------------------
+
+var numbers = [2,4,6,8,10,12,14,16,17,18,20];
+
+function findOutlier(arr) {
+    var odds = arr.filter(function (number) {
+    return !!(number % 2)
+  });
+
+  var evens = arr.filter(function (number) {
+    return !(number % 2)
+  });
+
+  var result = (odds.length < evens.length) ? odds.pop() : evens.pop();
+
+  return result;
+}
+
+findOutlier(numbers);
+// ______________________________________________________________
+spinWords( "Hey fellow warriors" );
+function spinWords(str) {
+  let strWords = str.split(" ");
+  for (let i = 0; i < strWords.length; i++) {
+    if (strWords[i].length >= 5) {
+   
+      let word = strWords[i].split("");
+      let v;
+      for (let j = 0; j < word.length / 2; j++) {
+      
+        [word[j], word[word.length - 1 - j]] = [
+          word[word.length - 1 - j],
+          word[j],
+        ];
+      }
+      strWords[i] = word.join("");
+    }
+  }
+  return strWords.join(" ");
+}
+
+function digitalRoot(num) {
+  let numStr = num;
+  do {
+    numStr = numStr.toString();
+    numStr = numStr.split("");
+    numStr = numStr.join("+");
+    numStr = eval(numStr);
+  } while (numStr > 9);
+  return numStr;
+}
+
+    </script>
+</body>
+</html>

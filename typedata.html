@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = ['Asabeneh', 100, true, null, undefined, { job: 'teaching' }];
+        function type(array){
+            const array=[];
+            for(let i=0;i<arr.length;i++) {
+                let type = typeof(array[i]);
+                 newArray.push(type);      
+              }   
+              return newArray;
+
+        }
+        console.log(typeArray(arr));
+
+         const ages = [35, 30, 17, 18, 15, 22, 16, 20];
+           function older(arr){
+               for (let i=0;i<ages.length;i++){
+                   if(ages[i]>18)
+                   newArray.push(ages);      
+
+               }
+               return newArray;
+           }
+              console.log(agesGreaterEighteen(ages));
+                [35, 30, 22, , 20];
+                function getAverageAge(users) {
+                   return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+                    }
+
+                       let a1 = { name: "a1", age: 25 };
+                       let b2 = { name: "b2", age: 30 };
+                       let c3 = { name: "c3", age: 29 };
+
+
+                       let arr = [ a1, b2, c3 ];
+
+                        alert( getAverageAge(arr) ); // 28
+        
+   let x1, x2;
+
+let a = prompt("Enter the value for A:");
+let b = prompt("Enter the value for B:")
+let c = prompt("Enter the value for C:")
+
+let determinant = (b*b) - (4*a*c);
+
+
+if (determinant > 0) {
+x1 = (-b - Math.sqrt(determinant))/(2 * a);
+x2 = (-b + Math.sqrt(determinant))/(2 * a);
+
+alert(`The roots of the Quadratic Equation ${x1} and ${x2}`);
+}
+else if(determinant == 0) {
+x1 = (-b - 0 / (2 * a));
+x2 = (-b + 0 / (2 * a));
+
+alert(`The roots of the Quadratic Equation are ${x1} and ${x2}`);
+}
+    </script>
+</body>
+</html>
